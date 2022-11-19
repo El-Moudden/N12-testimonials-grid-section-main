@@ -1,0 +1,160 @@
+
+
+* {
+    padding: 0;  
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+ 
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDF2F8;
+    padding: 5% 10%;
+}
+@media (min-width:687px ) {
+    .container {
+        /* width: 82.5%;
+        height: 82.5%; */
+    
+        height: 100%;
+        /* min-width: 687px; */
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        width: fit-content;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+
+}
+.Daniel {
+    grid-column:1/3 ;
+    grid-row:1/2 ;
+    background-color: #733FC8;
+    /* margin-right: 30px;
+    margin-bottom: 30px; */
+    border-radius: 20px;
+    /* min-width: 500px; */
+    overflow: hidden;
+
+}
+.Jonathan {
+    grid-column:3/4 ;
+    grid-row:1/2 ;
+    background-color: #49556B;
+    /* margin-bottom: 30px; */
+    border-radius: 20px;
+    overflow: hidden;
+    /* min-width: 300px; */
+
+}
+.Jeanette {
+    grid-column:1/2 ;
+    grid-row:2/3 ;
+    background-color: white;
+    border-radius: 20px;
+    /* min-width: 300px; */
+    overflow: hidden;
+
+}
+.Patrick {
+    grid-column:2/4 ;
+    grid-row:2/3 ;
+    background-color: #18202D;
+    /* margin-left: 30px; */
+    border-radius: 20px;
+    /* min-width: 500px; */
+    overflow: hidden;
+
+}
+
+.Kira {
+    grid-column:4/5 ;
+    grid-row:1/3 ;
+    background-color: white;
+    /* margin-left: 30px; */
+    border-radius: 20px;
+    /* min-width: 300px; */
+    overflow: hidden;
+
+}
+.person {
+    padding: 20px;
+    
+}
+.nom-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+img {
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 20px;
+}
+.nom {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+span {
+    color: #929DAF;
+    font-size: 15px;
+}
+.Kira .important , .Jeanette .important {
+    color: #49556B;
+}
+
+.important {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.secondary {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #929DAF;
+}
+h3 {
+    font-size: 16px;
+}
+
+@media (max-width:687px) {
+    body {
+        height: 2195px;
+        margin: 0;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 375px;
+        /* margin: 30px 10px;
+        padding: 0; */
+    }
+    .container {
+        min-width: 355px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        /* margin: 30px 10px; */
+    }
+    .person {
+        height: fit-content;
+        margin: 0 0 20px 0;
+        min-width: 355px ;
+    }
+    
+}
